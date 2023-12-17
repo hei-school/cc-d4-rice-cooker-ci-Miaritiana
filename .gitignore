@@ -1,0 +1,17 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/cc-d4-rice-cooker-ci-miaritiana
+cc-d4-rice-cooker-ci-miaritiana.so
+cc-d4-rice-cooker-ci-miaritiana.dylib
+cc-d4-rice-cooker-ci-miaritiana.dll
+cc-d4-rice-cooker-ci-miaritiana.a
+cc-d4-rice-cooker-ci-miaritiana.lib
+cc-d4-rice-cooker-ci-miaritiana-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst
+.idea/
