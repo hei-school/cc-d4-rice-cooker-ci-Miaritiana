@@ -76,12 +76,12 @@ void RiceCooker::setTimer(int minute)
     cout << "Timer is set to " << minute << " minutes" << endl;
 }
 
-char* RiceCooker::getTemperature(void)
+string RiceCooker::getTemperature(void)
 {
     return temperature;
 }
 
-void RiceCooker::setTemperature(char* setupTemperature)
+void RiceCooker::setTemperature(string setupTemperature)
 {
     temperature = setupTemperature;
     cout << "Temperature set to " << setupTemperature << endl;

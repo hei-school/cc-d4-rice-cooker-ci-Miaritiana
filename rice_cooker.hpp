@@ -26,7 +26,7 @@ private:
     double capacity;
     Content content;
     int timer;
-    char* temperature;
+    string temperature;
     int cookingDuration;
 
 public:
@@ -37,8 +37,8 @@ public:
     void getContentDetails();
     int getTimer(void);
     void setTimer(int minute);
-    char* getTemperature(void);
-    void setTemperature(char* setupTemperature);
+    string getTemperature(void);
+    void setTemperature(string setupTemperature);
     int getCookingDuration(void);
     void setCookingDuration(int minute);
     void automaticCook();

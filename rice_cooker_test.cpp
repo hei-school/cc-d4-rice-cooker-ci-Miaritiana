@@ -1,5 +1,8 @@
 #include "gtest/gtest.h"
 #include "rice_cooker.hpp"
+#include <string>
+
+using namespace std;
 
 TEST(RiceCookerTest, SetCapacity)
 {
@@ -19,7 +22,33 @@ TEST(RiceCookerTest, SetContent)
     content.setQuantity(2.0);
     riceCooker.setContent(content);
 
+    EXPECT_EQ(content.getName(), "Vegetable");
+    EXPECT_EQ(content.getQuantity(), 2.0);
     EXPECT_EQ(riceCooker.getContent(), content);
+}
+
+TEST(RiceCookerTest, SetTimer)
+{
+    RiceCooker riceCooker;
+    riceCooker.setTimer(30);
+
+    EXPECT_EQ(riceCooker.getTimer(), 30);
+}
+
+TEST(RiceCookerTest, SetTemperature)
+{
+    RiceCooker riceCooker;
+    riceCooker.setTemperature("Hight");
+
+    EXPECT_EQ(riceCooker.getTemperature(), "Hight");
+}
+
+TEST(RiceCookerTest, SetCookingduration)
+{
+    RiceCooker riceCooker;
+    riceCooker.setCookingDuration(20);
+
+    EXPECT_EQ(riceCooker.getCookingDuration(), 20);
 }
 
 int main(int argc, char** argv)
