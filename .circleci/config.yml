@@ -30,11 +30,11 @@ jobs:
       - image: cimg/base:stable
     steps:
       - run:
-          name: "install clang-format"
+          name: "install cppcheck"
           command: "apt install -y clang-format"
       - run:
-          name: "run clang-format"
-          command: "clang-format -i -style=file rice_cooker.cpp rice_cooker_test.cpp main.cpp"
+          name: "run cppcheck"
+          command: "cppcheck --quiet --error-exitcode=1 rice_cooker.cpp rice_cooker_test.cpp main.cpp rice_cooker.hpp"
 
 workflows:
   version: 2
