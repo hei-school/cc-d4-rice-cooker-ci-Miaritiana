@@ -22,7 +22,7 @@ Before you begin, ensure you have the D compiler installed. If not, you can inst
     ```
 
 ## Usage
-1. Compile the D program:
+1. Compile the C++ program:
 
     ```bash
     g++ main.cpp -o rice_cooker
