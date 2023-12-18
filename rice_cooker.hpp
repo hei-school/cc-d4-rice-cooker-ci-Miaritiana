@@ -14,6 +14,10 @@ public:
     double getQuantity(void);
     void setName(string newName);
     void setQuantity(double newQuantity);
+    bool operator==(const Content& other) const
+    {
+        return name == other.name && quantity == other.quantity;
+    }
 };
 
 class RiceCooker
@@ -39,4 +43,12 @@ public:
     void setCookingDuration(int minute);
     void automaticCook();
     void manualCook();
+    bool operator==(const RiceCooker& other) const
+    {
+        return capacity == other.capacity 
+            && content == other.content 
+            && timer == other.timer
+            && temperature == other.temperature
+            && cookingDuration == other.cookingDuration;
+    }
 };
